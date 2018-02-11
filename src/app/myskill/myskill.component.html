@@ -1,0 +1,33 @@
+<div class="container">
+       
+  <div class="row">
+      <div class="col-sm-6" >
+              <h2>Your Skill List</h2>
+      </div>
+      <div class="col-sm-5" >
+          
+          <input class="btn btn-primary right" type=""  value="Add a new Skill" style="width:150px;height:40px;margin-top:5px;margin-left:65px">
+      </div>
+  </div>
+<div class="row">
+ <div class="col-12" style="margin-top:50px">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Skill Name</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+  
+       <tr *ngFor="let skill of user | getData">
+              <td>{{skill.value.childskill.name}}</td>
+              <td>{{skill.value.childskill.Rating}}</td>
+              <td><input class="btn btn-primary" type="submit" value="Update" style="width:150px;height:40px"></td>
+          </tr> 
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>

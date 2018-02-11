@@ -1,0 +1,49 @@
+<nav id="top-navbar" class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <a class="navbar-brand" href="#" style="max-width:18%">
+    <img src="http://c.ymcdn.com/sites/www.tasscc.org/resource/resmgr/Logos/TEKsystemsLogo_FINAL_notag_n.jpg"
+        class="img-fluid" style="max-width:auto">
+  </a>
+  <button id="hamburger-btn" class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="max-width:auto"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id="search_box" class="nav navbar-nav w-100 justify-content-end" style="margin-right:30px">
+      <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="width:300px">
+      <li class="nav-item ">
+        <a class="nav-link" href="#"><i class="fas fa-bell" style="color:white"></i></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#"><i class="fas fa-user" style="color:white"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+<nav class="navbar-primary" style="background-color:rgb(86, 138, 235)">
+  <ul id="navbar-menu-text" class="navbar-primary-menu">
+    <li>
+      <a href="#"><i class="fas fa-tachometer-alt" style="color:white"></i><span class="nav-label"> <strong> Dashboard</strong></span></a>
+      <a href="http://localhost:4200/skillnav"><i class="fas fa-bullseye" style="color:white"></i><span class="nav-label"><strong> Skills</strong></span></a>
+      <a href="#"><i class="fas fa-certificate" style="color:white"></i><span class="nav-label"><strong> Certifications</strong></span></a>
+      <a href="#"><i class="fas fa-calendar-alt" style="color:white"></i><span class="nav-label"><strong> Training</strong></span></a>
+      <a href="#"><i class="fas fa-briefcase" style="color:white"></i><span class="nav-label"><strong> Report</strong></span></a>
+    </li>
+  </ul>
+
+  <ul id="navbar-menu-icon" class="navbar-primary-menu">
+      <li>
+        <a href="#"><i class="fas fa-tachometer-alt"></i></a>
+        <a href="#"><i class="fas fa-bullseye"></i><span class="nav-label"></span></a>
+        <a href="#"><i class="fas fa-certificate"></i><span class="nav-label"></span></a>
+        <a href="#"><i class="fas fa-calendar-alt"></i><span class="nav-label"></span></a>
+        <a href="#"><i class="fas fa-briefcase"></i><span class="nav-label"></span></a>
+      </li>
+    </ul>
+</nav>
+
+<div id="main_content">
+  <router-outlet></router-outlet>
+</div>

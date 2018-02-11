@@ -1,0 +1,30 @@
+<div class="container">
+    <table>
+
+    <tr>
+  <td class="desc" width="70%" >Explore and rate your skills</td>
+  
+  <td>
+      <input  routerLink="../search" routerLinkActive="active" class="form-control mr-sm-2" type="search" style="width:100%; align-items:flex-end" type="text" >
+    
+    
+  </td>
+</tr>
+</table>
+  <table class="table">
+    
+    <thead>
+          <th scope="col">Tool</th>
+          <th scope="col">Number of rated users</th>
+          <th scope="col"></th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let group of groups">
+            <td>{{group.name}}</td>
+            <td >{{this.gettotal(group)}}</td> 
+            <td><button routerLink="../explore" routerLinkActive="active" (click)="setSkillId(this.group.id-1)" type="button" class="btn btn-primary btn-sm">Explore</button></td>
+          </tr>
+      </tbody>
+  </table>
+
+</div>

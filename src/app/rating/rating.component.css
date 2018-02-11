@@ -1,0 +1,33 @@
+.well {
+    background-color:#F0F0F0;
+  padding: 20px 30px;
+ }
+ 
+ .bs {
+      background-color: #FFFFFF; /* Green */
+      border: 2px solid #000066;
+      color: black;
+      padding: 10px 70px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 8px;
+ }
+ .bs:hover {background-color:rgb(50, 94, 255);
+           color: white; }
+ .divsubmit {
+    padding: 20px 30px;
+ }
+ 
+
+label {
+  display:block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.form-group {
+  display:inline-block;
+  
+}
